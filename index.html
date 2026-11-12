@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mi primer maqueta</title>
+    <title>Mi primer maqueta - Página 1</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -20,76 +22,58 @@
         }
 
         .caja1 {
-            height: 150px;
+            min-height: 150px;
             background: linear-gradient(135deg, #1e1b4b, #312e81);
             color: #ffffff;
-            padding: 20px;
+            padding: 25px 20px;
             border-radius: 20px !important;
             border: 1px solid rgba(255, 255, 255, 0.1) !important;
         }
 
-        .caja2 {
-            height: 300px;
+        .caja-menu {
             background-color: #1e293b;
-            color: #38bdf8;
-            padding: 35px 30px;
+            border: 1px solid #334155;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            padding: 15px;
         }
 
-        .caja3 {
-            height: 300px;
-            background-color: #1e293b;
-            color: #c084fc;
-            padding: 35px 15px;
-        }
-
-        .caja4 {
-            height: 300px;
-            background-color: #1e293b;
-            color: #2dd4bf;
-            padding: 35px 15px;
-        }
-
-        .caja5 {
-            height: 300px;
-            background-color: #1e293b;
-            color: #fbbf24;
-            padding: 35px 15px;
-        }
-
-        .caja6 {
-            height: 300px;
-            background-color: #1e293b;
-            color: #4ade80;
-            padding: 35px 15px;
-        }
-
-        .caja7 {
-            height: 300px;
-            background-color: #1e293b;
-            color: #f472b6;
-            padding: 35px 15px;
-        }
-
-        .caja8 {
-            height: 300px;
-            background-color: #1e293b;
+        .btn-nav {
+            background-color: #0f172a;
             color: #94a3b8;
-            padding: 35px 15px;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
         }
 
-        .caja9 {
-            height: 300px;
-            background-color: #1e293b;
-            color: #818cf8;
-            padding: 35px 15px;
+        .btn-nav:hover {
+            background-color: #312e81;
+            color: #ffffff;
+            border-color: #4f46e5;
+            transform: translateY(-2px);
         }
 
-        .caja10 {
-            height: 300px;
-            background-color: #1e293b;
-            color: #fb923c;
-            padding: 35px 15px;
+        .btn-nav.activo {
+            background-color: #2563eb;
+            color: #ffffff;
+            border-color: #60a5fa;
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
         }
+
+        .caja2 { height: 300px; background-color: #1e293b; color: #38bdf8; padding: 35px 30px; }
+        .caja3 { height: 300px; background-color: #1e293b; color: #c084fc; padding: 35px 15px; }
+        .caja4 { height: 300px; background-color: #1e293b; color: #2dd4bf; padding: 35px 15px; }
+        .caja5 { height: 300px; background-color: #1e293b; color: #fbbf24; padding: 35px 15px; }
+        .caja6 { height: 300px; background-color: #1e293b; color: #4ade80; padding: 35px 15px; }
+        .caja7 { height: 300px; background-color: #1e293b; color: #f472b6; padding: 35px 15px; }
+        .caja8 { height: 300px; background-color: #1e293b; color: #94a3b8; padding: 35px 15px; }
+        .caja9 { height: 300px; background-color: #1e293b; color: #818cf8; padding: 35px 15px; }
+        .caja10 { height: 300px; background-color: #1e293b; color: #fb923c; padding: 35px 15px; }
 
         .caja2, .caja3, .caja4, .caja5,
         .caja6, .caja7, .caja8, .caja9, .caja10 {
@@ -144,62 +128,74 @@
     <div class="container-fluid px-4">
         <div class="row g-3">
 
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 caja1">
-                <img class="imagen-header" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+            
+            <div class="col-12 caja-menu">
+                <div class="d-flex flex-wrap justify-content-center gap-2">
+                    <a href="index.html" class="btn-nav activo">Estructura y Sintaxis</a>
+                    <a href="especificidad.html" class="btn-nav">Niveles de Especificidad</a>
+                    <a href="pagina2.html" class="btn-nav">PseudoClases y Pseudo Elementos</a>
+                    <a href="#" class="btn-nav">Modelo de Caja</a>
+                </div>
+            </div>
+
+           
+            <div class="col-12 caja1">
+                <img class="imagen-header" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
                 <h2>Inteligencia Artificial y Datos</h2>
                 <p style="color: #c7d2fe;">Descubre los conceptos fundamentales de la ciencia de datos y el aprendizaje automático.</p>
             </div>
 
+          
             <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-12 col-xxl-12 caja2">
-                <img class="imagen-circular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg">
+                <img class="imagen-circular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
                 <h3>¿Qué es el Machine Learning?</h3>
                 <p>Es una rama de la IA que permite a los sistemas aprender y mejorar automáticamente a partir de los datos sin ser programados explícitamente.</p>
             </div>
 
             <div class="col-6 col-sm-6 col-md-2 col-lg-2 col-xl-4 col-xxl-4 caja3">
-                <img class="imagen-circular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg">
+                <img class="imagen-circular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
                 <h3>Pandas</h3>
                 <p>Biblioteca de Python diseñada para el análisis y manipulación de datos estructurados.</p>
             </div>
 
             <div class="col-6 col-sm-6 col-md-2 col-lg-2 col-xl-4 col-xxl-4 caja4">
-                <img class="imagen-circular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg">
+                <img class="imagen-circular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">
                 <h3>NumPy</h3>
                 <p>Librería fundamental para el cálculo científico y manejo de arreglos multidimensionales.</p>
             </div>
 
             <div class="col-6 col-sm-6 col-md-10 col-lg-10 col-xl-4 col-xxl-4 caja5">
-                <img class="imagen-circular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg">
+                <img class="imagen-circular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
                 <h3>PyTorch</h3>
                 <p>Framework de aprendizaje profundo utilizado para construir redes neuronales complejas.</p>
             </div>
 
             <div class="col-6 col-sm-6 col-md-12 col-lg-12 col-xl-3 col-xxl-3 caja6">
-                <img class="imagen-circular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg">
+                <img class="imagen-circular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter">
                 <h3>Jupyter</h3>
                 <p>Entorno interactivo ideal para crear, ejecutar y compartir código de análisis de datos.</p>
             </div>
 
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja7">
-                <img class="imagen-circular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg">
+                <img class="imagen-circular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R">
                 <h3>Lenguaje R</h3>
                 <p>Lenguaje especializado en computación estadística y gráficos para el análisis masivo de datos.</p>
             </div>
 
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja8">
-                <img class="imagen-circular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">
+                <img class="imagen-circular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
                 <h3>Docker (MLOps)</h3>
                 <p>Herramienta para empaquetar y desplegar modelos de IA en entornos de producción estables.</p>
             </div>
 
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-2 col-xxl-2 caja9">
-                <img class="imagen-circular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg">
+                <img class="imagen-circular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV">
                 <h3>Visión por Computadora</h3>
                 <p>Tecnología que permite a las computadoras extraer información a partir de imágenes o videos.</p>
             </div>
 
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-3 caja10">
-                <img class="imagen-circular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg">
+                <img class="imagen-circular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
                 <h3>Big Data & SQL</h3>
                 <p>Gestión de grandes volúmenes de datos para alimentar y entrenar modelos predictivos.</p>
             </div>
@@ -208,6 +204,5 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
